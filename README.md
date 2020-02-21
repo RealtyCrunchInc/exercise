@@ -1,7 +1,3 @@
-## Welcome 
-
-This is an exercise to see how you would handle a very typical task that's fundamental to the operation of RealtyCrunch: extracting data from HTML. 
-
 ## Description 
 
 For this exercise, we're asking you write an HTML parser. In the /html directory, you'll find a few different HTML files that are typical of the kind of HTML that we parse every day. The HTML files were all pulled from a specific site, and the actual URL for each page can be found at the top of each HTML file (so you can pull the original page up in your browser for viewing, or even check out other property pages). What you'll need to do is construct a parser to extract the following:
