@@ -14,6 +14,6 @@ For this exercise, you can use any version of Java that's 8 or above. Also, feel
 
 ## Code 
 
-Start by creating your own branch in which to do all your work. When you are finished, open a pull request for us to review. Once we gotten a chance to review your code, we'll schedule a follow-up call to talk about it. If you have any questions or would like any clarifications regarding this exercise please don't hesitate to contact Simon.
+Start by creating your own branch in which to do all your work. When you are finished, open a pull request for us to review. Once we have gotten a chance to review your code, we'll schedule a follow-up call to talk about it. If you have any questions or would like any clarifications regarding this exercise please don't hesitate to contact Simon.
 
 
