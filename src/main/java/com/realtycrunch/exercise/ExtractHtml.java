@@ -2,6 +2,7 @@ package com.realtycrunch.exercise;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.Resource;
@@ -12,8 +13,6 @@ public class ExtractHtml implements CommandLineRunner {
     
     @Value("classpath:html/listing1.html")
     Resource listing1;
-    
-    
 
     @Override
     public void run(String... args) throws Exception {
@@ -26,7 +25,14 @@ public class ExtractHtml implements CommandLineRunner {
             System.out.println("Addres: "+doc.getElementsByAttributeValue("data-tn", "listing-page-address").get(0).text()+" "+
                     doc.getElementsByAttributeValue("data-tn", "listing-page-address-subtitle").get(0).text());
             
-            System.out.println("Image URLs: "+doc.getElementsByTag("img").get(0).attr("src"));
+            for(Element ele : doc.getElementsByTag("img")) {
+                if(!ele.attr("src").isEmpty()) {
+                    System.out.println("Image URL: "+ele.attr("src"));
+                }
+                if(!ele.attr("data-src").isEmpty()) {
+                    System.out.println("Image URL: "+ele.attr("data-src"));
+                }
+            }
             
         } catch (Exception e) {
             e.printStackTrace();
