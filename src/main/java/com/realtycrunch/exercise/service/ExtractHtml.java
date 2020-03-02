@@ -1,4 +1,4 @@
-package com.realtycrunch.exercise;
+package com.realtycrunch.exercise.service;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
